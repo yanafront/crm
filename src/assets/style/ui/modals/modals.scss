@@ -1,0 +1,239 @@
+.modal {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.modal-content-box {
+    border-radius: 20px;
+    max-width: 510px;
+    width: 100%;
+    height: auto;
+    max-height: calc(100vh - 15%);
+    overflow: auto;
+    padding: 30px;
+}
+
+.add-links-modal {
+    .form-input-link {
+        flex-direction: column;
+        height: 80px;
+
+        &_hostname {
+            max-width: 100%;
+            min-width: 100%;
+        }
+
+        &_field {
+            border-top-right-radius: 0px;
+            border-top-left-radius: 0px;
+        }
+    }
+}
+
+.add-photo-modal {
+    input[type="file"] {
+        display: none;
+    }
+
+    .upload-drop-area {
+        width: 100%;
+        border-radius: 10px;
+        padding: 20px 60px 40px;
+        transition: .2s;
+        flex: 1 0 auto;
+    }
+}
+
+.add-cover-photo-modal {
+    .modal-content-box {
+        max-width: 1510px;
+    }
+}
+
+/* mobile */
+@media all and (min-width: 320px) and (max-width: 767px) {
+    .modal-content-box {
+        padding: 15px;
+    }
+
+    .add-video-modal {
+        .modal-body {
+            .form-input-link  {
+                height: 40px;
+
+                .form-input-link_field {
+                    border-top: none;
+                    border-radius: 7px;
+                }
+            }
+        }
+    }
+
+    .add-cover-photo-modal {
+        .ps {
+            max-height: unset !important;
+        }
+
+        .modal-content-box {
+            .modal-body {
+                overflow-y: scroll;
+                max-height: 500px;
+                -webkit-overflow-scrolling: auto;
+                touch-action: manipulation;
+            }
+        }
+    }
+}
+
+/* color palette */
+.light-theme {
+    .modal {
+        background-color: $modal-mask;
+    }
+
+    .modal-content-box {
+        background-color: $white;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .share-contact-modal {
+        .modal-content-box {
+            background-color: $grey-2;
+        }
+    }
+
+    .add-links-modal {
+        .form-input-link {
+            &_hostname {
+                border-right: none;
+            }
+
+            &_field {
+                border-top: 1px solid $grey-8;
+            }
+        }
+    }
+
+    .add-photo-modal {
+        .upload-drop-area {
+            background-color: $white;
+            border: 1px dashed $main-green;
+        }
+    }
+}
+
+.dark-theme {
+    .modal {
+        background-color: $modal-mask;
+    }
+
+    .modal-content-box {
+        background-color: $dark-1;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .share-contact-modal {
+        .modal-content-box {
+            background-color: $main-dark;
+            color: $white;
+        }
+    }
+
+    .add-links-modal,
+    .add-video-modal,
+    .wipe-out-modal,
+    .generate-tags-modal {
+        .form-input-container {
+            label {
+                color: $white;
+            }
+
+            .form-input-field {
+                border: 1px solid transparent;
+                background-color: $main-dark;
+                color: $white;
+
+                &::placeholder {
+                    color: $grey-8;
+                }
+
+                &.form-input-field-invalid {
+                    border-color: $red;
+                }
+            }
+
+            .error-message {
+                color: $red;
+            }
+        }
+
+        .form-input-link {
+            border: 1px solid transparent;
+            background-color: $main-dark;
+
+            &_hostname {
+                border-right: 1px solid transparent;
+                border-bottom: 1px solid $grey-3;
+                color: $grey-3;
+
+                .custom-select {
+                    .selected {
+                        background-color: $main-dark;
+                        border: 1px solid transparent;
+                        color: $white;
+
+                        &:after {
+                            border-color: $darkgrey transparent transparent transparent;
+                        }
+                    }
+
+                    .items {
+                        color: $white;
+                        border-right: 1px solid $grey-3;
+                        border-left: 1px solid $grey-3;
+                        border-bottom: 1px solid $grey-3;
+                        border-top: 1px solid $grey-3;
+                        background-color: $main-dark;
+
+                        .item {
+                            color: $white;
+
+                            &:hover {
+                                background-color: $dark-2;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &_field {
+                background-color: $main-dark;
+                color: $white;
+
+                &::placeholder {
+                    color: $grey-8;
+                }
+            }
+
+            &.form-input-link_invalid {
+                border-color: $red;
+            }
+        }
+    }
+
+    .add-photo-modal {
+        .upload-drop-area {
+            background-color: $dark-2;
+            border: 1px dashed $main-green;
+        }
+    }
+}

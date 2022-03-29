@@ -1,0 +1,141 @@
+.tabs-toggler-container {
+    position: relative;
+    min-width: 280px;
+
+    .tabs-toggler {
+        border-radius: 7px;
+        box-sizing: border-box;
+        overflow: hidden;
+
+        &_item {
+            min-width: 70px;
+            line-height: 21px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            box-sizing: border-box;
+
+            &-custom-date {
+                line-height: 1;
+                min-width: 175px;
+                padding: 0;
+            }
+        }
+    }
+
+    .tabs-toggler-datepicker {
+        input {
+            border: none;
+            height: 40px;
+            cursor: pointer;
+            padding: 0px 5px;
+            width: 100%;
+        }
+    }
+}
+
+.dashboard-analytics-card {
+    .social-link-counter {
+        border-radius: 7px;
+        padding: 3px 10px 3px 5px;
+        display: flex;
+        align-items: center;
+
+        span {
+            min-width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.light-theme {
+    .tabs-toggler-container {
+        .tabs-toggler {
+            border: 1px solid $grey-1;
+
+            &_item {
+                color: $black;
+
+                &:not(:last-child) {
+                    border-right: 1px solid $grey-1;
+                }
+
+                &.active {
+                    background-color: $grey-2;
+
+                    .tabs-toggler-datepicker {
+                        input {
+                            background-color: $grey-2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .dashboard-analytics-card {
+        background-color: $grey-2;
+
+        .social-link-counter {
+            background: $darkgrey-lighter;
+
+            span {
+                background-color: $main-green;
+            }
+        }
+    }
+}
+
+.dark-theme {
+    .tabs-toggler-container {
+        .tabs-toggler {
+            border: 1px solid transparent;
+            background-color: $dark-1;
+
+            &_item {
+                color: $white;
+
+                &:not(:last-child) {
+                    border-right: 1px solid $dark-2;
+                }
+
+                &.active {
+                    background-color: $dark-2;
+
+                    .tabs-toggler-datepicker {
+                        input {
+                            background-color: $grey-2;
+                        }
+                    }
+                }
+            }
+        }
+
+        .tabs-toggler-datepicker {
+            input {
+                background-color: $dark-1 !important;
+                color: $white;
+            }
+        }
+    }
+
+    .dashboard-analytics-card {
+        background-color: $dark-1;
+
+        .social-link-counter {
+            background: $main-dark;
+
+            span {
+                background-color: $main-green;
+            }
+        }
+    }
+}

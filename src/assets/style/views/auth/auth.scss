@@ -1,0 +1,97 @@
+.auth-form {
+    align-self: center;
+    margin: 0 15px;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+
+    .instruction-modal {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.4;
+        position: absolute;
+        top: -145px;
+        right: 0px;
+        max-width: 300px;
+        width: 100%;
+        padding: 10px;
+        border-radius: 7px;
+
+        &:after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            position: absolute;
+            border-width: 8px;
+            border-style: solid;
+            left: calc(50% - 8px);
+            bottom: -16px;
+        }
+    }
+}
+
+.pre-auth-container {
+    margin-top: 80px;
+    margin-bottom: auto;
+}
+
+.retrev-logo-img {
+    max-width: 550px;
+    min-width: 320px;
+    width: 100%;
+    height: auto;
+}
+
+.pre-auth-buttons {
+    max-width: 550px;
+    width: 100%;
+    padding: 20px 0px 0px 0px;
+
+    button {
+        height: 64px;
+        max-width: 250px;
+        width: 100%;
+    }
+}
+
+/* color palette */
+.light-theme {
+    .auth-form {
+        border: 2px solid $grey-1;
+        background-color: $grey-2;
+
+        .instruction-modal {
+            border: 1px solid $main-darkblue;
+            background-color: $grey-2;
+
+            &:after {
+                border-color: $main-darkblue transparent transparent;
+            }
+        }
+    }
+}
+
+/* mobile */
+@media all and (min-width: 320px) and (max-width: 767px) {
+    .auth-form {
+        .primary-button {
+            min-width: 130px;
+        }
+    }
+
+    .pre-auth-container {
+        margin-top: 120px;
+    }
+
+    .pre-auth-buttons {
+        button {
+            height: 54px;
+            max-width: 140px;
+            width: 100%;
+        }
+    }
+}

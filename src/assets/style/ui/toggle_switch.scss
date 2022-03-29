@@ -1,0 +1,61 @@
+.toggle-switch {
+    width: 38px;
+    height: 22px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    cursor: pointer;
+
+    &_disabled {
+        cursor: not-allowed;
+    }
+
+    input {
+        display: none;
+    }
+
+    .toggle-switch-field {
+        display: flex;
+        border-radius: 10px;
+        transition: .2s;
+    }
+
+    .toggle-switch-field {
+        &::before {
+            content: '';
+            height: 16px;
+            width: 16px;
+            border-radius: 50%;
+            position: absolute;
+            top: 3px;
+            left: 4px;
+            transition: .2s;
+        }
+    }
+
+    input:checked + .toggle-switch-field::before {
+        left: 17px;
+    }
+}
+
+/* color palette */
+.light-theme,
+.dark-theme {
+    .toggle-switch {
+        .toggle-switch-field {
+            background-color: $grey-6;
+
+            &::before {
+                background-color: $grey-5
+            }
+        }
+
+        input:checked + .toggle-switch-green {
+            background-color: $light-green;
+
+            &::before {
+                background-color: $main-green;
+            }
+        }
+    }
+}

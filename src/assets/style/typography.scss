@@ -1,0 +1,429 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/AvenirLT-Black.eot');
+    src: local('Avenir LT Black '), local('AvenirLT-Black'),
+        url('../fonts/AvenirLT-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AvenirLT-Black.woff') format('woff'),
+        url('../fonts/AvenirLT-Black.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.f-8-black,
+.f-8-white,
+.f-8-darkgrey,
+.f-8-grey,
+.f-8-green,
+.f-8-blue {
+    font-size: 8px;
+}
+
+.f-9-black,
+.f-9-white,
+.f-9-grey,
+.f-9-darkgrey,
+.f-9-green,
+.f-9-blue {
+    font-size: 9px;
+}
+
+.f-10-black,
+.f-10-white,
+.f-10-grey,
+.f-10-darkgrey,
+.f-10-green,
+.f-10-blue {
+    font-size: 10px;
+}
+
+.f-11-black,
+.f-11-white,
+.f-11-grey,
+.f-11-darkgrey,
+.f-11-green,
+.f-11-blue {
+    font-size: 11px;
+}
+
+.f-12-black,
+.f-12-white,
+.f-12-grey,
+.f-12-darkgrey,
+.f-12-green,
+.f-12-blue {
+    font-size: 12px;
+}
+
+.f-13-black,
+.f-13-white,
+.f-13-grey,
+.f-13-darkgrey,
+.f-13-green,
+.f-13-blue {
+    font-size: 13px;
+}
+
+.f-14-black,
+.f-14-white,
+.f-14-grey,
+.f-14-darkgrey,
+.f-14-green,
+.f-14-blue {
+    font-size: 14px;
+}
+
+.f-15-black,
+.f-15-white,
+.f-15-grey,
+.f-15-darkgrey,
+.f-15-green,
+.f-15-blue {
+    font-size: 15px;
+}
+
+.f-16-black,
+.f-16-white,
+.f-16-grey,
+.f-16-darkgrey,
+.f-16-green,
+.f-16-blue {
+    font-size: 16px;
+}
+
+.f-17-black,
+.f-17-white,
+.f-17-grey,
+.f-17-darkgrey,
+.f-17-green,
+.f-17-blue {
+    font-size: 17px;
+}
+
+.f-18-black,
+.f-18-white,
+.f-18-grey,
+.f-18-darkgrey,
+.f-18-green,
+.f-18-blue {
+    font-size: 18px;
+}
+
+.f-20-black,
+.f-20-white,
+.f-20-grey,
+.f-20-darkgrey,
+.f-20-green,
+.f-20-blue {
+    font-size: 20px;
+}
+
+.f-22-black,
+.f-22-white,
+.f-22-grey,
+.f-22-darkgrey,
+.f-22-green,
+.f-22-blue {
+    font-size: 22px;
+}
+
+.f-24-black,
+.f-24-white,
+.f-24-grey,
+.f-24-darkgrey,
+.f-24-green,
+.f-24-blue {
+    font-size: 24px;
+}
+
+.f-28-black,
+.f-28-white,
+.f-28-grey,
+.f-28-darkgrey,
+.f-28-green,
+.f-28-blue {
+    font-size: 28px;
+}
+
+.f-30-black,
+.f-30-white,
+.f-30-grey,
+.f-30-darkgrey,
+.f-30-green,
+.f-30-blue {
+    font-size: 30px;
+}
+
+.f-36-black,
+.f-36-white,
+.f-36-grey,
+.f-36-darkgrey,
+.f-36-green,
+.f-36-blue {
+    font-size: 36px;
+}
+
+.f-40-black,
+.f-40-white,
+.f-40-grey,
+.f-40-darkgrey,
+.f-40-green,
+.f-40-blue {
+    font-size: 40px;
+}
+
+.f-italic {
+    font-style: italic;
+}
+
+.f-black {
+    font-weight: 900;
+}
+
+.f-extrabold {
+    font-weight: 800;
+}
+
+.f-bold {
+    font-weight: 700;
+}
+
+.f-sbold {
+    font-weight: 600;
+}
+
+.f-medium {
+    font-weight: 500;
+}
+
+.f-normal {
+    font-weight: 400;
+}
+
+/* color palette */
+.light-theme {
+    .f-8-black
+    .f-9-black,
+    .f-10-black,
+    .f-11-black,
+    .f-12-black,
+    .f-13-black,
+    .f-14-black,
+    .f-15-black,
+    .f-16-black,
+    .f-17-black,
+    .f-18-black,
+    .f-20-black,
+    .f-22-black,
+    .f-24-black,
+    .f-28-black,
+    .f-30-black,
+    .f-36-black,
+    .f-40-black {
+        color: $black;
+    }
+
+    .f-8-white,
+    .f-9-white,
+    .f-10-white,
+    .f-11-white,
+    .f-12-white,
+    .f-13-white,
+    .f-14-white,
+    .f-15-white,
+    .f-16-white,
+    .f-18-white,
+    .f-20-white,
+    .f-22-white,
+    .f-24-white,
+    .f-28-white,
+    .f-30-white,
+    .f-36-white,
+    .f-40-white {
+        color: $white;
+    }
+
+    .f-8-grey,
+    .f-9-grey,
+    .f-10-grey,
+    .f-11-grey,
+    .f-12-grey,
+    .f-13-grey,
+    .f-14-grey,
+    .f-15-grey,
+    .f-16-grey,
+    .f-17-grey,
+    .f-18-grey,
+    .f-20-grey,
+    .f-22-grey,
+    .f-24-grey,
+    .f-28-grey,
+    .f-30-grey,
+    .f-36-grey,
+    .f-40-grey {
+        color: $grey-3;
+    }
+
+    .f-8-darkgrey,
+    .f-9-darkgrey,
+    .f-10-darkgrey,
+    .f-11-darkgrey,
+    .f-12-darkgrey,
+    .f-13-darkgrey,
+    .f-14-darkgrey,
+    .f-15-darkgrey,
+    .f-16-darkgrey,
+    .f-17-darkgrey,
+    .f-18-darkgrey,
+    .f-20-darkgrey,
+    .f-22-darkgrey,
+    .f-24-darkgrey,
+    .f-28-darkgrey,
+    .f-30-darkgrey,
+    .f-36-darkgrey,
+    .f-40-darkgrey {
+        color: $darkgrey;
+    }
+
+    .f-8-blue,
+    .f-9-blue,
+    .f-10-blue,
+    .f-11-blue,
+    .f-12-blue,
+    .f-13-blue,
+    .f-14-blue,
+    .f-15-blue,
+    .f-16-blue,
+    .f-18-blue,
+    .f-20-blue,
+    .f-22-blue,
+    .f-24-blue,
+    .f-28-blue,
+    .f-30-blue,
+    .f-36-blue,
+    .f-40-blue {
+        color: $blue;
+    }
+
+    .f-9-green,
+    .f-10-green,
+    .f-11-green,
+    .f-12-green,
+    .f-13-green,
+    .f-14-green,
+    .f-15-green,
+    .f-16-green,
+    .f-18-green,
+    .f-20-green,
+    .f-22-green,
+    .f-24-green,
+    .f-28-green,
+    .f-30-green,
+    .f-36-green,
+    .f-40-green {
+        color: $main-green;
+    }
+}
+
+/* color palette */
+.dark-theme {
+    .f-8-white,
+    .f-9-white,
+    .f-10-white,
+    .f-11-white,
+    .f-12-white,
+    .f-13-white,
+    .f-14-white,
+    .f-15-white,
+    .f-16-white,
+    .f-18-white,
+    .f-20-white,
+    .f-22-white,
+    .f-24-white,
+    .f-28-white,
+    .f-30-white,
+    .f-36-white,
+    .f-40-white {
+        color: $white;
+    }
+
+    .f-8-grey,
+    .f-9-grey,
+    .f-10-grey,
+    .f-11-grey,
+    .f-12-grey,
+    .f-13-grey,
+    .f-14-grey,
+    .f-15-grey,
+    .f-16-grey,
+    .f-17-grey,
+    .f-18-grey,
+    .f-20-grey,
+    .f-22-grey,
+    .f-24-grey,
+    .f-28-grey,
+    .f-30-grey,
+    .f-36-grey,
+    .f-40-grey {
+        color: $grey-3;
+    }
+
+    .f-8-darkgrey,
+    .f-9-darkgrey,
+    .f-10-darkgrey,
+    .f-11-darkgrey,
+    .f-12-darkgrey,
+    .f-13-darkgrey,
+    .f-14-darkgrey,
+    .f-15-darkgrey,
+    .f-16-darkgrey,
+    .f-17-darkgrey,
+    .f-18-darkgrey,
+    .f-20-darkgrey,
+    .f-22-darkgrey,
+    .f-24-darkgrey,
+    .f-28-darkgrey,
+    .f-30-darkgrey,
+    .f-36-darkgrey,
+    .f-40-darkgrey {
+        color: $darkgrey;
+    }
+
+    .f-8-blue,
+    .f-9-blue,
+    .f-10-blue,
+    .f-11-blue,
+    .f-12-blue,
+    .f-13-blue,
+    .f-14-blue,
+    .f-15-blue,
+    .f-16-blue,
+    .f-18-blue,
+    .f-20-blue,
+    .f-22-blue,
+    .f-24-blue,
+    .f-28-blue,
+    .f-30-blue,
+    .f-36-blue,
+    .f-40-blue {
+        color: $blue;
+    }
+
+    .f-9-green,
+    .f-10-green,
+    .f-11-green,
+    .f-12-green,
+    .f-13-green,
+    .f-14-green,
+    .f-15-green,
+    .f-16-green,
+    .f-18-green,
+    .f-20-green,
+    .f-22-green,
+    .f-24-green,
+    .f-28-green,
+    .f-30-green,
+    .f-36-green,
+    .f-40-green {
+        color: $main-green;
+    }
+}

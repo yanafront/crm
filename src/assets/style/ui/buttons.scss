@@ -1,0 +1,119 @@
+.primary-button,
+.transparent-button,
+.border-button,
+.small-border-button,
+.icon-button,
+.danger-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.primary-button {
+    border: none;
+    border-radius: 7px;
+    padding: 15px 30px;
+    font-weight: 500;
+    font-size: 13px;
+    min-width: 150px;
+}
+
+.border-button {
+    padding: 10px 30px;
+    border-radius: 7px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.small-border-button {
+    border-radius: 7px;
+    padding: 0px 10px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.transparent-button {
+    background-color: transparent;
+    border: none;
+    width: auto;
+}
+
+.icon-button {
+    border: none;
+    border-radius: 7px;
+}
+
+.danger-button {
+    border-radius: 7px;
+    border: none;
+    padding: 11px 30px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+/* color palette */
+.light-theme,
+.dark-theme {
+    .primary-button {
+        background-color: $main-green;
+        color: $white;
+    }
+
+    .border-button {
+        background-color: $white;
+        border: 1px solid $grey-1;
+        color: $grey-3;
+
+        &.green-border-button {
+            border: 1px solid $main-green;
+            color: $main-green;
+        }
+    }
+
+    .small-border-button {
+        background-color: $white;
+        border: 1px solid $grey-7;
+        color: $main-green;
+    }
+
+    .icon-button-green {
+        background: $main-green-lighter;
+
+        svg {
+            fill: $main-green;
+        }
+    }
+
+    .icon-button-grey {
+        background: $grey-3-lighter;
+
+        svg {
+            fill: $grey-3;
+        }
+    }
+
+    .danger-button {
+        background-color: $red;
+        color: $white;
+    }
+}
+
+.dark-theme {
+    .border-button {
+        background-color: transparent;
+        border: 1px solid $grey-1;
+        color: $white;
+
+        &.green-border-button {
+            border: 1px solid $main-green;
+            color: $main-green;
+        }
+    }
+}

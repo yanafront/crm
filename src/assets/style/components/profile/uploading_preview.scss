@@ -1,0 +1,16 @@
+.uploading-file {
+    .uploading-img {
+        height: 50px;
+        width: 50px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        display: block;
+        border-radius: 3px;
+    }
+
+    .uploading-img-blur {
+        -webkit-filter: opacity(50%);
+        filter: opacity(50%);
+    }
+}

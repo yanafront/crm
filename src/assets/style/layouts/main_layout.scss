@@ -1,0 +1,54 @@
+.main-layout {
+    display: flex;
+
+    &_content {
+        width: 100%;
+        padding: 50px 40px;
+        height: 100vh;
+        overflow-y: scroll;
+    }
+}
+
+/* color palette */
+.light-theme {
+    .main-layout {
+        background-color: $white;
+
+        &_content {
+        }
+    }
+}
+
+.dark-theme {
+    .main-layout {
+        background-color: $main-dark;
+
+        .f-8-black
+        .f-9-black,
+        .f-10-black,
+        .f-11-black,
+        .f-12-black,
+        .f-13-black,
+        .f-14-black,
+        .f-15-black,
+        .f-16-black,
+        .f-17-black,
+        .f-18-black,
+        .f-20-black,
+        .f-22-black,
+        .f-24-black,
+        .f-28-black,
+        .f-30-black,
+        .f-36-black,
+        .f-40-black {
+            color: $white;
+        }
+    }
+}
+
+/* mobile */
+@media all and (min-width: 320px) and (max-width: 767px) {
+    .main-layout {
+
+    }
+}

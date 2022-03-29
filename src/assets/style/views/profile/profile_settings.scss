@@ -1,0 +1,13 @@
+.color-preview {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+}
+
+.cover-photo-preview {
+    img {
+        max-width: 1920px;
+        width: 100%;
+        object-fit: cover;
+    }
+}

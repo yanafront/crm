@@ -1,0 +1,113 @@
+.content-type-item {
+    &_icon {
+        width: 46px;
+        height: 46px;
+        border-radius: 10px;
+    }
+}
+
+.add-content-section {
+    .content-counter {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        line-height: 1;
+    }
+
+    .content-item {
+        .delete-item-button {
+            visibility: hidden;
+            opacity: 0;
+            transition: .2s ease;
+        }
+
+        &:hover {
+            .delete-item-button {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+
+    .content-photo {
+        max-width: 86px;
+        width: 100%;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 3px;
+    }
+
+    .content-full-photo {
+        max-width: 450px;
+        width: 100%;
+        min-height: 260px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+}
+
+.light-theme {
+    .add-content-section {
+        background-color: $grey-2;
+    }
+
+    .content-type-item {
+        box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.03);
+        background: $grey-2;
+        border: 1px solid $grey-10;
+
+        &_icon {
+            background: $main-green-lighter;
+        }
+    }
+}
+
+.dark-theme {
+    .add-content-section {
+        background-color: $dark-1;
+
+        .content-item_documents {
+            background-color: $main-dark;
+            color: $white;
+        }
+
+        .f-8-black
+        .f-9-black,
+        .f-10-black,
+        .f-11-black,
+        .f-12-black,
+        .f-13-black,
+        .f-14-black,
+        .f-15-black,
+        .f-16-black,
+        .f-17-black,
+        .f-18-black,
+        .f-20-black,
+        .f-22-black,
+        .f-24-black,
+        .f-28-black,
+        .f-30-black,
+        .f-36-black,
+        .f-40-black {
+            color: $white;
+        }
+
+        svg {
+            fill: $white;
+        }
+    }
+
+    .content-type-item {
+        box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.03);
+        background: $main-dark;
+
+        &_icon {
+            background: $main-green-lighter;
+        }
+    }
+}

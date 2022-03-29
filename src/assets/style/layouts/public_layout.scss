@@ -1,0 +1,25 @@
+.public-profile-layout {
+    padding: 15px 20px;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+
+    &-container {
+        max-width: 1620px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/* color palette */
+.light-theme {
+    .public-profile-layout {
+        background-color: $white;
+    }
+}
+
+.dark-theme {
+    .public-profile-layout {
+        background-color: $main-dark;
+    }
+}

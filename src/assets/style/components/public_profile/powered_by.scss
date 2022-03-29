@@ -1,0 +1,39 @@
+.powered-by {
+    border-radius: 20px;
+    padding: 20px;
+    min-height: 170px;
+}
+
+/* color palette */
+.light-theme {
+    .powered-by {
+        background-color: $grey-2;
+    }
+}
+
+.dark-theme {
+    .powered-by {
+       background-color: $dark-1;
+
+        .f-8-black
+        .f-9-black,
+        .f-10-black,
+        .f-11-black,
+        .f-12-black,
+        .f-13-black,
+        .f-14-black,
+        .f-15-black,
+        .f-16-black,
+        .f-17-black,
+        .f-18-black,
+        .f-20-black,
+        .f-22-black,
+        .f-24-black,
+        .f-28-black,
+        .f-30-black,
+        .f-36-black,
+        .f-40-black {
+            color: $white;
+        }
+    }
+}

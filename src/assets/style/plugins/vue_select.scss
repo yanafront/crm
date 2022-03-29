@@ -1,0 +1,91 @@
+.vue-select {
+    width: 100% !important;
+    height: 40px;
+    border-radius: 7px !important;
+
+    .vue-select-header .icon.arrow-downward,
+    .vue-select-header .icon.loading,
+    .vue-select-input-wrapper .icon.loading,
+    .vue-tag span {
+        margin-right: 8px !important;
+    }
+
+    .vue-input {
+        height: 37px;
+        padding: 4px 6px 4px 10px !important;
+        font-family: 'Inter', sans-serif !important;
+        font-size: 14px !important;
+    }
+
+    .vue-dropdown {
+        border-radius: 0px 0px 7px 7px !important;
+
+        .vue-dropdown-item {
+            padding: 12px 4px 12px 10px !important;
+            font-family: 'Inter', sans-serif !important;
+            font-size: 14px !important;
+        }
+    }
+}
+
+.light-theme {
+    .vue-select {
+        border: 1px solid $grey-8 !important;
+
+        &.invalid {
+            border-color: $red !important;
+        }
+
+        .vue-input input::placeholder {
+            color: $black !important;
+        }
+
+        .vue-dropdown {
+            border: 1px solid $grey-8 !important;
+        }
+
+        .vue-dropdown-item.selected.highlighted {
+            background-color: $grey-2 !important;
+        }
+
+        .vue-dropdown-item.highlighted {
+            background-color: $grey-2 !important;
+        }
+    }
+}
+
+.dark-theme {
+    .vue-select {
+        border: 1px solid transparent !important;
+        background-color: $dark-1 !important;
+        color: $white !important;
+
+        &.invalid {
+            border-color: $red !important;
+        }
+
+        .vue-input input::placeholder {
+            color: $grey-8 !important;
+        }
+
+        .vue-dropdown {
+            border: 1px solid transparent !important;
+            background-color: $dark-1 !important;
+        }
+
+        .vue-dropdown-item.selected.highlighted,
+        .vue-dropdown-item.selected {
+            background-color: $dark-2 !important;
+        }
+
+        .vue-dropdown-item.highlighted {
+            background-color: $dark-2 !important;
+        }
+
+        .vue-input input,
+        input[readonly] {
+            background-color: $dark-1 !important;
+            color: $white !important;
+        }
+    }
+}

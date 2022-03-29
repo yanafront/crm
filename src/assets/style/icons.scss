@@ -1,0 +1,89 @@
+svg {
+    transition: .2s;
+}
+
+.round-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.round-iconX32 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.round-iconX43 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+}
+
+.light-theme,
+.dark-theme {
+    // icons style
+    .i-grey {
+        fill: $grey-3;
+    }
+
+    .i-darkgrey {
+        fill: $darkgrey;
+    }
+
+    .i-white {
+        fill: $white;
+    }
+
+    .i-black {
+        fill: $black;
+    }
+
+    .i-blue {
+        fill: $blue;
+    }
+
+    .i-red {
+        fill: $red;
+    }
+
+    .i-green {
+        fill: $main-green;
+    }
+
+    .i-yellow {
+        fill: $yellow;
+    }
+
+    .round-icon {
+        background-color: $main-green;
+    }
+
+    .light-green-round-icon {
+        background-color: $light-green;
+    }
+
+    .light-yellow-round-icon {
+        background-color: $light-yellow;
+    }
+
+    .main-green-lighter {
+        background-color: $main-green-lighter;
+    }
+}
+
+.dark-theme {
+    .i-black {
+        fill: $white;
+    }
+}

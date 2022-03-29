@@ -1,0 +1,19 @@
+.load-more-button {
+    background-color: $main-green;
+    transition: .2s;
+    height: 45px;
+    padding: 0 30px;
+    min-width: 130px;
+    border-radius: 7px;
+    border: none;
+}
+
+/* color palette */
+.light-theme,
+.dark-theme {
+    .load-more-button {
+        .loading {
+            fill: $white;
+        }
+    }
+}

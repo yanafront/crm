@@ -1,0 +1,70 @@
+.table {
+    border-radius: 10px;
+    padding: 12px;
+
+    .table-header {
+        border-radius: 10px;
+        display: flex;
+        padding: 0 20px;
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 40px;
+    }
+
+    .table-body {
+        display: flex;
+        padding: 20px;
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 1.2;
+    }
+}
+
+.light-theme {
+    .table {
+        background: $white;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.02);
+
+        .table-header {
+            background: $grey-2;
+            color: $black;
+        }
+    }
+}
+
+.dark-theme {
+    .table {
+        background: $dark-1;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.02);
+        color: $white;
+
+        .table-header {
+            background: $dark-2;
+            color: $white;
+        }
+
+        .transparent-button {
+            color: $white;
+
+            svg {
+                fill: $white;
+            }
+        }
+    }
+}
+
+/* mobile */
+@media all and (min-width: 320px) and (max-width: 767px) {
+    .table-container {
+        overflow: auto;
+
+        .table {
+            overflow-x: scroll;
+            width: max-content;
+        }
+    }
+}

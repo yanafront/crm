@@ -1,0 +1,102 @@
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    min-width: 16px;
+
+    &-users {
+        position: absolute;
+        left: -25px;
+        top: 3px;
+    }
+
+    &-reverse {
+        flex-direction: row-reverse;
+    }
+
+    input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+
+    .checkbox-mark {
+        height: 16px;
+        min-width: 16px;
+        border-radius: 2px;
+        position: relative;
+        background-color: transparent;
+        transition: .1s;
+    }
+
+    .checkbox-mark::after {
+        content: '';
+        position: absolute;
+        top: 8px;
+        left: 3px;
+        transform: rotate(45deg);
+        width: 2px;
+        height: 2px;
+    }
+
+    .checkbox-label {
+       font-size: 13px;
+       line-height: 13px;
+       padding-left: 10px;
+       max-width: 85%;
+    }
+
+    input + .checkbox-mark,
+    input + .checkbox-mark .checkbox-mark::after,
+    input ~ .checkbox-label {
+        cursor: pointer;
+    }
+
+    input:disabled + .checkbox-mark,
+    input:disabled + .checkbox-mark .checkbox-mark::after,
+    input:disabled ~ .checkbox-label {
+        cursor: default;
+    }
+
+    &-medium {
+        .checkbox-mark {
+            width: 23px;
+            height: 23px;
+
+            &::after {
+                top: 10px;
+                left: 6px;
+                width: 3px;
+                height: 3px;
+            }
+        }
+    }
+}
+
+/* color palette */
+.light-theme,
+.dark-theme {
+    .checkbox {
+        .grey {
+            background-color: $grey-8;
+        }
+
+        input:checked + .grey {
+            background-color: $main-green;
+        }
+
+        input:checked + .checkbox-mark::after {
+            background: $white;
+            box-shadow:
+                0px 0 0 $white,
+                2px 0 0 $white,
+                4px 0 0 $white,
+                4px -2px 0 $white,
+                4px -4px 0 $white,
+                4px -6px 0 $white,
+                4px -8px 0 $white;
+        }
+    }
+}

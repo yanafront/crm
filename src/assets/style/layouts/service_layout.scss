@@ -1,0 +1,78 @@
+.service-layout {
+    height: 100vh;
+
+    &_logo {
+        font-family: 'Avenir', sans-serif;
+        font-style: normal;
+        font-weight: 800;
+    }
+
+    .service-layout_stub {
+        border-radius: 20px;
+        max-width: 510px;
+        width: 100%;
+        padding: 40px 30px 50px;
+    }
+}
+
+.light-theme {
+    .service-layout {
+        background: url('../images/shapes/Vector4.svg') 150px -58% no-repeat,
+                    url('../images/shapes/Vector1.svg') 100% 0% no-repeat,
+                    url('../images/shapes/Vector2.svg') 0% 100% no-repeat,
+                    url('../images/shapes/Vector3.svg') 180px 100% no-repeat;
+        background-color: $darkblue-2;
+
+        .service-layout_stub {
+            background: $white;
+            box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+
+.dark-theme {
+    .service-layout {
+        background: url('../images/shapes/Vector4.svg') 150px -58% no-repeat,
+                    url('../images/shapes/Vector1.svg') 100% 0% no-repeat,
+                    url('../images/shapes/Vector2.svg') 0% 100% no-repeat,
+                    url('../images/shapes/Vector3.svg') 180px 100% no-repeat;
+        background-color: $main-dark;
+
+        .service-layout_stub {
+            background: $dark-1;
+            box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .f-8-black
+        .f-9-black,
+        .f-10-black,
+        .f-11-black,
+        .f-12-black,
+        .f-13-black,
+        .f-14-black,
+        .f-15-black,
+        .f-16-black,
+        .f-17-black,
+        .f-18-black,
+        .f-20-black,
+        .f-22-black,
+        .f-24-black,
+        .f-28-black,
+        .f-30-black,
+        .f-36-black,
+        .f-40-black {
+            color: $white;
+        }
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+    .light-theme {
+        .service-layout {
+            background: url('../images/shapes/Vector4.svg') 60px -170% no-repeat,
+                        url('../images/shapes/Vector2.svg') 0% 100% no-repeat,
+                        url('../images/shapes/Vector3.svg') 180px 100% no-repeat;
+            background-color: $darkblue-2;
+        }
+    }
+}

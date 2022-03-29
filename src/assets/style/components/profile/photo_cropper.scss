@@ -1,0 +1,45 @@
+.foto-cropper {
+    .cropper-preview {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+
+        .cropper-preview-stub {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .primary-button {
+        font-weight: 600;
+        font-size: 14px;
+        padding: 15px 30px;
+    }
+
+    .image-upload-btn {
+        input {
+            display: none;
+        }
+    }
+}
+
+.light-theme,
+.dark-theme {
+    .foto-cropper {
+        .cropper-preview {
+            .cropper-preview-stub {
+                background-color: $darkgrey;
+            }
+        }
+    }
+}
+
+/* mobile */
+@media all and (min-width: 320px) and (max-width: 767px) {
+    .foto-cropper {
+        .primary-button {
+            padding: 15px 15px;
+        }
+    }
+}

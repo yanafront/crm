@@ -1,0 +1,49 @@
+// main
+@import './variables.scss';
+@import './main.scss';
+@import './grid.scss';
+@import './helpers.scss';
+@import './icons.scss';
+@import './typography.scss';
+@import './animation.scss';
+
+// ui
+@import './ui/buttons.scss';
+@import './ui/form_input.scss';
+@import './ui/select_input.scss';
+@import './ui/toggle_switch.scss';
+@import './ui/loader.scss';
+@import './ui/load_more.scss';
+@import './ui/search_bar.scss';
+@import './ui/checkbox_button.scss';
+@import './ui/modals/modals.scss';
+
+// layouts
+@import './layouts/auth_layout.scss';
+@import './layouts/main_layout.scss';
+@import './layouts/public_layout.scss';
+@import './layouts/service_layout.scss';
+
+// components
+@import './components/layout/navbar.scss';
+@import './components/profile/profile_card.scss';
+@import './components/profile/photo_cropper.scss';
+@import './components/public_profile/public_profile_card.scss';
+@import './components/public_profile/powered_by.scss';
+@import './components/dashboard/dashboard.scss';
+@import './components/table.scss';
+@import './components/profile/add_content.scss';
+@import './components/profile/uploading_preview.scss';
+@import './components/profile/color_picker_component.scss';
+@import './components/adminManagment/users_table.scss';
+@import './components/profile/card_swith_modal.scss';
+
+// views
+@import './views/auth/auth.scss';
+@import './views/profile/profile_settings.scss';
+@import './views/profile/public_profile_preview.scss';
+@import './views/stripe/products.scss';
+
+// Third-party library styled
+@import './plugins/vue_select.scss';
+@import './plugins/color_picker.css';

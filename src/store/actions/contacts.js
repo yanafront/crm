@@ -1,0 +1,3 @@
+export const SAVE_CONTACT = 'SAVE_CONTACT';
+export const GET_ALL_CONTACTS = 'GET_ALL_CONTACTS';
+export const DELETE_CONTACT = 'DELETE_CONTACT';

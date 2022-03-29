@@ -1,0 +1,55 @@
+/* color palette */
+.light-theme {
+    .public-profile-preview {}
+}
+
+.dark-theme {
+    .public-profile-preview,
+    .public-profile-page {
+        .public-profile-card {
+            .f-8-black
+            .f-9-black,
+            .f-10-black,
+            .f-11-black,
+            .f-12-black,
+            .f-13-black,
+            .f-14-black,
+            .f-15-black,
+            .f-16-black,
+            .f-17-black,
+            .f-18-black,
+            .f-20-black,
+            .f-22-black,
+            .f-24-black,
+            .f-28-black,
+            .f-30-black,
+            .f-36-black,
+            .f-40-black {
+                color: $black;
+            }
+        }
+
+        .modal {
+            .f-8-black
+            .f-9-black,
+            .f-10-black,
+            .f-11-black,
+            .f-12-black,
+            .f-13-black,
+            .f-14-black,
+            .f-15-black,
+            .f-16-black,
+            .f-17-black,
+            .f-18-black,
+            .f-20-black,
+            .f-22-black,
+            .f-24-black,
+            .f-28-black,
+            .f-30-black,
+            .f-36-black,
+            .f-40-black {
+                color: $white;
+            }
+        }
+    }
+}

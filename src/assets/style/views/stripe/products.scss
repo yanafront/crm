@@ -1,0 +1,15 @@
+.light-theme {
+    .stripe-products {
+        .product-card {
+            background-color: $grey-2;
+        }
+    }
+}
+
+.dark-theme {
+    .stripe-products {
+        .product-card {
+            background-color: $dark-1;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+/* enter transitions */
+.fade-content-enter-from {
+    opacity: 0;
+    transform: translateY(-60px);
+}
+
+.fade-content-enter-active {
+    transition: all 0.15s ease;
+}
+
+/* leave transitions */
+.fade-content-leave-to {
+    opacity: 0;
+    transform: translateY(-60px);
+}
+
+.fade-content-leave-active {
+    transition: all 0.15s ease;
+}
+
+// DragnDrop content sections
+.flip-list-move {
+    transition: transform 0.5s;
+}
+
+.no-move {
+    transition: transform 0s;
+}
+
+.ghost {
+    opacity: 0.5;
+}
+
+.list-group-item {
+    cursor: move;
+}
+
+.light-theme {
+    .ghost {
+        background: $grey-3;
+    }
+}
+
+.dark-theme {
+    .ghost {
+        background: $main-dark;
+    }
+}
